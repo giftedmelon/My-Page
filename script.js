@@ -11,9 +11,9 @@ myName.addEventListener('mouseout', function() {
 function changeLanguage(language) {
     const nameElement = document.getElementById('myName');
     const greetings = {
-      'en': 'Hello, I\'m [Your Name]',
-      'zh': '你好，我是[你的名字]',
-      'ja': 'こんにちは、私は[あなたの名前]です'
+      'en': 'Hello, I\'m Uken',
+      'zh': '你好，我是宇軒',
+      'ja': 'こんにちは、私はうけんです'
     };
     
     const selectedGreeting = greetings[language] || greetings['en'];
