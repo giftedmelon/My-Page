@@ -37,3 +37,15 @@ body {
     font-size: 1.5em;
     margin-bottom: 10px;
   }
+
+  .language-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .language-switch button {
+    padding: 6px 10px;
+    margin: 0 5px;
+    font-size: 0.8em;
+  }
