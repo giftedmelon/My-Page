@@ -21,7 +21,7 @@ function changeLanguage(language) {
   }
 
 
-  /*function changeLanguage(language) {
+   /*function changeLanguage(language) {
     const nameElement = document.getElementById('myName');
     const textToTranslate = nameElement.textContent;
     const targetLanguage = language;
@@ -35,7 +35,7 @@ function changeLanguage(language) {
       });
   }
   
-  function translateText(text, targetLanguage) {
+ function translateText(text, targetLanguage) {
     const apiKey = 'YOUR_GOOGLE_TRANSLATE_API_KEY';
     const apiUrl = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
   
