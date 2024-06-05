@@ -28,6 +28,7 @@ function changeLanguage(language) {
       'https://www.tse.ens.titech.ac.jp/~nohara/ja/',
       'https://www.tse.ens.titech.ac.jp/~nohara/ja/blog/',
       'https://www.tse.ens.titech.ac.jp/~nohara/ja/member/',
+      'https://www.tse.ens.titech.ac.jp/~nohara/ja/student/',
     ];
 
     var index = Math.floor(Math.random() * websites.length);
