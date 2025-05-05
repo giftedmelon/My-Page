@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yuxuan Liu - Research Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
     <div class="sidebar">
-        <h2></h2>
+        <h2 class="handwriting">Math&Type</h2>
         <a href="#about">About Me</a>
         <a href="#research">Research Projects </a>
         <a href="#contact">Contact</a>
+        <a href="https://github.com/giftedmelon" target="_blank" class="github-link">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" 
+          class="github-icon">
+        </a>
+        <div class="theme-toggle" onclick="toggleTheme()">
+          <i id="theme-icon" class="fa-solid fa-moon"></i>
+        </div>
     </div>
 
     <div class="content">
         <h1>Yuxuan Liu</h1>
-        <p><strong>Position:</strong> PhD Candidate, School of Environment and Society, Institute of Science Tokyo</p>
-        <p><strong>Email:</strong> liu.y.cd@m.titech.ac.jp</p>
-
+        <p>PhD Candidate, School of Environment and Society, Institute of Science Tokyo</p>
+  
         <section id="about">
             <h2>About Me</h2>
             <p>
-                My name is Yuxuan Liu, from China and currently studying in Nohara Laboratory at Institute of Science Tokyo.
+                My name is Yuxuan Liu, from China and currently studying in <a class="doi" href="https://www.tse.ens.titech.ac.jp/~nohara/ja/lab/" target="_blank">Nohara Laboratory</a> at Institute of Science Tokyo.
                 I am a PhD candidate specializing in computational typography, focusing on stroke-based font representation and vector graphics processing.
             </p>
         </section>
@@ -31,27 +39,34 @@
             <h2>Research Projects</h2>
 
             <div class="project">
-                <h3>Stroke-Centric Font Representation</h3>
+                <h3>Font Skeleton Generation</h3>
                 <p>
-                    This project explores extracting and modeling stroke-based representations from outlined glyphs to improve digital typography and font reconstruction.
+                    This project explores generating the skeletons from outlined glyphs by fine-tuning the LLMs (Large Language Models) to address the challenges posed by the absence of font skeletons in typeface design and automatic font generation.
                 </p>
-                <div style="display: flex; gap: 10px;">
+                <div style="display: flex; gap: 10px; justify-content: center;">
                   <img src="font.pdf" alt="Image 1" style="max-width:48%; height:auto;">
                   <img src="command.pdf" alt="Image 2" style="max-width:48%; height:auto;">
                 </div>
                 <ul>
-                    <li>Publication: Yuxuan Liu, Yasuhisa Fujii, Xinru Zhu, and Kayoko Nohara. 2024. <a class="doi" href="https://openaccess.thecvf.com/content/ACCV2024/papers/Liu_Fine-tuning_Large_Language_Models_for_Automatic_Font_Skeleton_Generation_Exploration_ACCV_2024_paper.pdf" target="_blank">Fine-tuning Large Language Models for Automatic Font Skeleton Generation.</a>In Proceedings of the Asian Conference on Computer Vision. 4156 - 4171.</li>
+                    <li>Publication: <strong>Yuxuan Liu</strong>, Yasuhisa Fujii, Xinru Zhu, and Kayoko Nohara. 2024. <a class="doi" href="https://openaccess.thecvf.com/content/ACCV2024/papers/Liu_Fine-tuning_Large_Language_Models_for_Automatic_Font_Skeleton_Generation_Exploration_ACCV_2024_paper.pdf" target="_blank">Fine-tuning Large Language Models for Automatic Font Skeleton Generation: Exploration and Analysis.</a> In Proceedings of the Asian Conference on Computer Vision. 4156 - 4171.
+                    <br><small>(Poster presentation on ACCV2024 in Hanoi, Vietnam)</small>
+                    </li>
+                </ul>
+                <ul>
+                  <li>Presentation: <strong>Yuxuan Liu</strong>, Yasuhisa Fujii, Xinru Zhu, and Kayoko Nohara. 2024. <a class="doi" href="https://ken.ieice.org/ken/paper/20240515AcDB/" target="_blank">Fine-tuning Large Language Models for Automatic Font Skeleton Generation: A First Attempt.</a> IEICE technical report, vol. 124, no. 23, PRMU2024-2, pp. 7-12.
+                  <br><small>(Oral presentation on PRMU2024 in Tokyo, Japan)</small>
+                  </li>
                 </ul>
             </div>
 
             <!-- <div class="project">
-                <h3>Parametric Stroke Modeling</h3>
+                <h3>Stroke Segmentation</h3>
                 <p>
-                    Developing methods for recovering dynamic handwriting strokes from static font outlines, integrating pen pressure and motion dynamics.
+                    This project is aim to develop rule-based methods to reconstruct the strokes from outlined glyphs.
                 </p>
-                <ul>
-                    <li>Publication: <a class="doi" href="https://doi.org/10.xxxx/ijkl9012" target="_blank">Parametric Stroke Extraction from Glyph Outlines</a></li>
-                </ul>
+                <div style="display: flex; gap: 10px;">
+                  <img src="framework.pdf" alt="Image 1" style="max-width:60%; height:auto;">
+                </div>
             </div> -->
         </section>
 
@@ -61,9 +76,29 @@
         </section>
 
         <footer>
-            &copy; 2025 Yuxuan Liu. All rights reserved.
+            &copy; 2025 Yuxuan Liu
         </footer>
     </div>
+
+<script>
+function toggleTheme() {
+    const body = document.body;
+    const icon = document.getElementById('theme-icon');
+
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+    } else {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    }
+}
+document.body.classList.add('light-mode');
+</script>   
 
 </body>
 </html>
