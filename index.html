@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="sidebar">
-        <h2></h2>
+        <h2 class="handwriting">Math&Type</h2>
         <a href="#about">About Me</a>
         <a href="#research">Research Projects </a>
         <a href="#contact">Contact</a>
@@ -22,7 +22,7 @@
         <section id="about">
             <h2>About Me</h2>
             <p>
-                My name is Yuxuan Liu, from China and currently studying in Nohara Laboratory at Institute of Science Tokyo.
+                My name is Yuxuan Liu, from China and currently studying in <a class="doi" href="https://www.tse.ens.titech.ac.jp/~nohara/ja/lab/" target="_blank">Nohara Laboratory</a> at Institute of Science Tokyo.
                 I am a PhD candidate specializing in computational typography, focusing on stroke-based font representation and vector graphics processing.
             </p>
         </section>
@@ -31,27 +31,30 @@
             <h2>Research Projects</h2>
 
             <div class="project">
-                <h3>Stroke-Centric Font Representation</h3>
+                <h3>Font Skeleton Generation</h3>
                 <p>
-                    This project explores extracting and modeling stroke-based representations from outlined glyphs to improve digital typography and font reconstruction.
+                    This project explores generating the skeletons from outlined glyphs by fine-tuning the LLMs (Large Language Models) to address the challenges posed by the absence of font skeletons in typeface design and automatic font generation.
                 </p>
                 <div style="display: flex; gap: 10px;">
                   <img src="font.pdf" alt="Image 1" style="max-width:48%; height:auto;">
                   <img src="command.pdf" alt="Image 2" style="max-width:48%; height:auto;">
                 </div>
                 <ul>
-                    <li>Publication: Yuxuan Liu, Yasuhisa Fujii, Xinru Zhu, and Kayoko Nohara. 2024. <a class="doi" href="https://openaccess.thecvf.com/content/ACCV2024/papers/Liu_Fine-tuning_Large_Language_Models_for_Automatic_Font_Skeleton_Generation_Exploration_ACCV_2024_paper.pdf" target="_blank">Fine-tuning Large Language Models for Automatic Font Skeleton Generation.</a>In Proceedings of the Asian Conference on Computer Vision. 4156 - 4171.</li>
+                    <li>Publication (Poster presentation on ACCV2024 in Hanoi, Vietnam): <strong>Yuxuan Liu</strong>, Yasuhisa Fujii, Xinru Zhu, and Kayoko Nohara. 2024. <a class="doi" href="https://openaccess.thecvf.com/content/ACCV2024/papers/Liu_Fine-tuning_Large_Language_Models_for_Automatic_Font_Skeleton_Generation_Exploration_ACCV_2024_paper.pdf" target="_blank">Fine-tuning Large Language Models for Automatic Font Skeleton Generation: Exploration and Analysis.</a> In Proceedings of the Asian Conference on Computer Vision. 4156 - 4171.</li>
                 </ul>
+                <ul>
+                  <li>Presentation (Oral presentation on PRMU2024 in Tokyo, Japan): <strong>Yuxuan Liu</strong>, Yasuhisa Fujii, Xinru Zhu, and Kayoko Nohara. 2024. <a class="doi" href="https://ken.ieice.org/ken/paper/20240515AcDB/" target="_blank">Fine-tuning Large Language Models for Automatic Font Skeleton Generation: A First Attempt.</a> IEICE technical report, vol. 124, no. 23, PRMU2024-2, pp. 7-12.</li>
+              </ul>
             </div>
 
             <!-- <div class="project">
-                <h3>Parametric Stroke Modeling</h3>
+                <h3>Stroke Segmentation</h3>
                 <p>
-                    Developing methods for recovering dynamic handwriting strokes from static font outlines, integrating pen pressure and motion dynamics.
+                    This project is aim to develop rule-based methods to reconstruct the strokes from outlined glyphs.
                 </p>
-                <ul>
-                    <li>Publication: <a class="doi" href="https://doi.org/10.xxxx/ijkl9012" target="_blank">Parametric Stroke Extraction from Glyph Outlines</a></li>
-                </ul>
+                <div style="display: flex; gap: 10px;">
+                  <img src="framework.pdf" alt="Image 1" style="max-width:60%; height:auto;">
+                </div>
             </div> -->
         </section>
 

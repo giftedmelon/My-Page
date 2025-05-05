@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family:  Helvetica, sans-serif;
   display: flex;
   min-height: 100vh;
   color: #333;
@@ -22,11 +22,15 @@ body {
   display: block;
   margin: 10px 0;
   text-decoration: none;
-  color: #0066cc;
+  color: #333;
+  font-weight: bold;
 }
 .sidebar a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #777;
+  font-weight: bold;
 }
+
 
 /* Main content */
 .content {
@@ -49,9 +53,15 @@ h2 {
   margin-bottom: 25px;
 }
 a.doi {
-  color: #0066cc;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+a.doi:hover {
+  color: #777;
   font-weight: bold;
 }
+
 footer {
   margin-top: 40px;
   font-size: 0.9em;
