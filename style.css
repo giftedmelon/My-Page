@@ -68,6 +68,8 @@ body.light-mode .sidebar {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  color: #333;
+  font-weight: bold;
 }
 .sidebar a:hover {
   text-decoration: none;
@@ -96,6 +98,7 @@ body.dark-mode .github-icon {
   filter: invert(100%);
 }
 
+
 /* Main content */
 .content {
   margin-left: 240px;
@@ -117,6 +120,12 @@ h2 {
   margin-bottom: 25px;
 }
 a.doi {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+a.doi:hover {
+  color: #777;
   color: #000000;
   font-weight: bold;
   text-decoration: none;
