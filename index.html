@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>U Page</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuxuan Liu - Research Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="zzz.png" alt="Your Photo">
-      <h1><span id="myName">Hello, I'm giftedmelon</span></h1>
-    </header>
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <a href="#about">About Me</a>
+        <a href="#research">Research Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-    <section class="about-me">
-      <h2>About Me</h2>
-      <p>My name is Yuxuan Liu, from China and currently studying in Nohara Laboratory at Tokyo Institute of Technology. </p>
-      <p>At the moment, I am a doctoral student with a passion for language and mathematics, devoted to the captivating world of typefaces. My focus lies in font image processing for achieving a new representation of fonts, drawing inspiration from handwriting movement. </p>
-      <!-- Add more details about yourself here -->
-    </section>
+    <div class="content">
+        <h1>Yuxuan Liu</h1>
+        <p><strong>Position:</strong> PhD Candidate, School of Environment and Society, Institute of Science Tokyo</p>
+        <p><strong>Email:</strong> liu.y.cd@m.titech.ac.jp</p>
 
-    <section class="Education">
-      <h2>Interests</h2>
-      <p>Character, Basketball, Hiking</p>
-      <img src="0x05b87.svg" alt="Yu">
-      <img src="0x08ed2.svg" alt="Xuan">
-      <!-- Add your passions and interests here -->
-    </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Yuxuan Liu, from China and currently studying in Nohara Laboratory at Tokyo Institute of Technology.
+                I am a PhD candidate specializing in computational typography, focusing on stroke-based font representation and vector graphics processing.
+            </p>
+        </section>
 
-    <section class="passion">
-      <h2>My Lab Page</h2>
-      <p>Input something and "Go".</p>
-      <!-- Add your passions and interests here -->
-    </section>
+        <section id="research">
+            <h2>Research Projects</h2>
 
-    <section class="language-switch">
-      <button onclick="changeLanguage('en')">EN</button>
-      <button onclick="changeLanguage('zh')">中</button>
-      <button onclick="changeLanguage('ja')">日</button>
-    </section>
+            <div class="project">
+                <h3>Stroke-Centric Font Representation</h3>
+                <p>
+                    This project explores extracting and modeling stroke-based representations from outlined glyphs to improve digital typography and font reconstruction.
+                </p>
+                <div style="display: flex; gap: 10px;">
+                  <img src="font.pdf" alt="Image 1" style="max-width:48%; height:auto;">
+                  <img src="command.pdf" alt="Image 2" style="max-width:48%; height:auto;">
+                </div>
+                <ul>
+                    <li>Publication: <a class="doi" href="https://openaccess.thecvf.com/content/ACCV2024/papers/Liu_Fine-tuning_Large_Language_Models_for_Automatic_Font_Skeleton_Generation_Exploration_ACCV_2024_paper.pdf" target="_blank">Fine-tuning Large Language Models for Automatic Font Skeleton Generation</a></li>
+                </ul>
+            </div>
 
-    <input type="text" id="userInput" placeholder="say some thing">
-    <button onclick="loadRandomWebsite()">Go</button>
-    <button onclick="closeWebsite()">Close</button>
+            <!-- <div class="project">
+                <h3>Parametric Stroke Modeling</h3>
+                <p>
+                    Developing methods for recovering dynamic handwriting strokes from static font outlines, integrating pen pressure and motion dynamics.
+                </p>
+                <ul>
+                    <li>Publication: <a class="doi" href="https://doi.org/10.xxxx/ijkl9012" target="_blank">Parametric Stroke Extraction from Glyph Outlines</a></li>
+                </ul>
+            </div> -->
+        </section>
 
-    <iframe id="websiteFrame" style="display: none; width: 100%; height: 500px;"></iframe>
-  </div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at <strong>liu.y.cd@m.titech.ac.jp</strong>.</p>
+        </section>
 
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-  <script src="script.js"></script>
+        <footer>
+            &copy; 2025 Yuxuan Liu. All rights reserved.
+        </footer>
+    </div>
+
 </body>
 </html>
+

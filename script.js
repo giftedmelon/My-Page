@@ -22,21 +22,21 @@ function changeLanguage(language) {
 
   var iframe = document.getElementById('websiteFrame');
 
-  function loadRandomWebsite() {
-    var userInput = document.getElementById('userInput').value.toLowerCase(); 
-    var websites = [
-      'https://www.tse.ens.titech.ac.jp/~nohara/ja/',
-      'https://www.tse.ens.titech.ac.jp/~nohara/ja/blog/',
-      'https://www.tse.ens.titech.ac.jp/~nohara/ja/member/',
-      'https://www.tse.ens.titech.ac.jp/~nohara/ja/student/',
-    ];
+  // function loadRandomWebsite() {
+  //   var userInput = document.getElementById('userInput').value.toLowerCase(); 
+  //   var websites = [
+  //     'https://www.tse.ens.titech.ac.jp/~nohara/ja/',
+  //     'https://www.tse.ens.titech.ac.jp/~nohara/ja/blog/',
+  //     'https://www.tse.ens.titech.ac.jp/~nohara/ja/member/',
+  //     'https://www.tse.ens.titech.ac.jp/~nohara/ja/student/',
+  //   ];
 
-    var index = Math.floor(Math.random() * websites.length);
-    var randomWebsite = websites[index];
+  //   var index = Math.floor(Math.random() * websites.length);
+  //   var randomWebsite = websites[index];
 
-    iframe.setAttribute('src', randomWebsite);
-    iframe.style.display = 'block';
-  }
+  //   iframe.setAttribute('src', randomWebsite);
+  //   iframe.style.display = 'block';
+  // }
 
   function closeWebsite() {
     iframe.removeAttribute('src');

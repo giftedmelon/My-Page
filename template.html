@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Research Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            min-height: 100vh;
+            color: #333;
+        }
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background-color: #f5f5f5;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            position: fixed;
+            height: 100%;
+        }
+        .sidebar h2 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        .content {
+            margin-left: 240px;
+            padding: 20px 40px;
+            flex: 1;
+        }
+
+        /* Content styles */
+        h1 {
+            font-size: 32px;
+            margin-top: 0;
+        }
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .project {
+            margin-bottom: 25px;
+        }
+        a.doi {
+            color: #0066cc;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <a href="#about">About Me</a>
+        <a href="#research">Research Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="content">
+        <h1>Your Name</h1>
+        <p><strong>Position:</strong> PhD Candidate, Department of Computer Science, University Name</p>
+        <p><strong>Email:</strong> your.email@university.edu</p>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a PhD candidate specializing in computational typography, focusing on stroke-based font representation and vector graphics processing. 
+                My research explores the intersection of computer graphics, design, and language technologies.
+            </p>
+        </section>
+
+        <section id="research">
+            <h2>Research Projects</h2>
+
+            <div class="project">
+                <h3>Stroke-Centric Font Representation</h3>
+                <p>
+                    This project explores extracting and modeling stroke-based representations from outlined glyphs to improve digital typography and font reconstruction.
+                </p>
+                <ul>
+                    <li>Publication: <a class="doi" href="https://doi.org/10.xxxx/abcd1234" target="_blank">Fine-tuning Large Language Models for Automatic Font Skeleton Generation</a></li>
+                    <li>Publication: <a class="doi" href="https://doi.org/10.xxxx/efgh5678" target="_blank">Voronoi Skeletonization for SVG Glyph Outlines</a></li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>Parametric Stroke Modeling</h3>
+                <p>
+                    Developing methods for recovering dynamic handwriting strokes from static font outlines, integrating pen pressure and motion dynamics.
+                </p>
+                <ul>
+                    <li>Publication: <a class="doi" href="https://doi.org/10.xxxx/ijkl9012" target="_blank">Parametric Stroke Extraction from Glyph Outlines</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            <ul>
+                <li><a class="doi" href="https://doi.org/10.xxxx/abcd1234" target="_blank">Fine-tuning Large Language Models for Automatic Font Skeleton Generation</a></li>
+                <li><a class="doi" href="https://doi.org/10.xxxx/efgh5678" target="_blank">Voronoi Skeletonization for SVG Glyph Outlines</a></li>
+                <li><a class="doi" href="https://doi.org/10.xxxx/ijkl9012" target="_blank">Parametric Stroke Extraction from Glyph Outlines</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at <strong>your.email@university.edu</strong>.</p>
+        </section>
+
+        <footer>
+            &copy; 2025 Your Name. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
