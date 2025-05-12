@@ -5,7 +5,11 @@ body {
   min-height: 100vh;
   color: #333;
 }
-
+.emoji-icon {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%);
+}
 /* ---- LIGHT/DARK MODE COLORS ---- */
 .theme-toggle {
   position: fixed;
