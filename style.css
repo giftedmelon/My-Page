@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   display: flex;
   min-height: 100vh;
   color: #333;
@@ -137,6 +137,18 @@ a.doi:hover {
 a.doi:hover {
   color: #777;
   font-weight: bold;
+}
+
+/* Icon Link */
+a.emoji-link {
+  text-decoration: none;
+  line-height: 0;           /* remove vertical gap */
+  display: inline-block;    /* prevents text-baseline alignment issues */
+}
+
+a.emoji-link img:hover {
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
 /* Dark mode */
