@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuxuan Liu - Research Page</title>
+    <link rel="icon" href="watermelon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="handwriting">Math&Type</h2>
+        <a href="#academic">Academic Experience</a>
+        <a href="#activities">Activities </a>
+        <a href="#publication">Publication</a>
+        <a href="index.html">Back to My Page</a>
+        <a href="https://github.com/giftedmelon" target="_blank" class="github-link">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" 
+          class="github-icon">
+        </a>
+        <div class="theme-toggle" onclick="toggleTheme()">
+          <i id="theme-icon" class="fa-solid fa-moon"></i>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1><a href="https://giftedmelon.github.io/knowledge/" class="emoji-link" target="_blank">
+            <img src="watermelon.png" class="emoji-icon" alt="Watermelon">
+          </a> Yuxuan Liu</h1>
+        <p>PhD Candidate, School of Environment and Society, Institute of Science Tokyo (formerly Tokyo Institute of Technology)</p>
+  
+        <section id="academic">
+            <h2>Academic Experience</h2>
+            <ul>
+                <li>School of Environment and Society, Institute of Science Tokyo
+                    <ul>
+                        <li> PhD Candidate</li>
+                        <li> 2023.04.01—present</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+              <li>School of Environment and Society, Tokyo Institute of Technology (now Institute of Science Tokyo)
+                <ul>
+                    <li> Master in Engineering</li>
+                    <li> Thesis: A Study on Generation of Font Skeletons as Vector Images</li>
+                    <li> 2021.04.01—2023.03.31</li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+                <li>Department of Electrical, Electronic and Information Engineering, Kansai University
+                  <ul>
+                      <li> Research Student</li>
+                      <li> Research Report: Learning Support System Based on Pronunciation of English Conver-
+                        sation Considering Listening Ability of English Learners</li>
+                      <li> 2020.04.01—2021.03.31</li>
+                  </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>Preparatory Course, Kansai University
+                  <ul>
+                      <li>Japanese Language Student</li>
+                      <li> 2019.09.01—2020.03.31</li>
+                  </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>School of Electronic Engineering, Huaihai Institute of Technology (now Jiangsu Ocean University)
+                  <ul>
+                      <li> Bachelor in Engineering</li>
+                      <li> 2014.09.01—2018.08.31</li>
+                  </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="activities">
+            <h2>Activities</h2>
+            <ul>
+                <li>Ars Electronica Festival 2025
+                    <ul>
+                        <li> Info Trainer (Mediator)</li>
+                        <li> 2025.09.03—2025.09.07</li>
+                    </ul>
+                </li>
+        </section>
+
+        <section id="publication">
+            <h2>Publication</h2>
+            <ul>
+                <li><a class="doi" href="https://openaccess.thecvf.com/content/ACCV2024/papers/Liu_Fine-tuning_Large_Language_Models_for_Automatic_Font_Skeleton_Generation_Exploration_ACCV_2024_paper.pdf" target="_blank">Fine-tuning Large Language Models for Automatic Font Skeleton Generation: Exploration and Analysis.</a>
+                    <ul>
+                        <li> Yuxuan Liu, Yasuhisa Fujii, Xinru Zhu, and Kayoko Nohara</li>
+                        <li> In Proceedings of the Asian Conference on Computer Vision. 4156 - 4171.</li>
+                        <li> Poster presentation on ACCV2024 in Hanoi, Vietnam (refreed)</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><a class="doi" href="https://ken.ieice.org/ken/paper/20240515AcDB/" target="_blank">Fine-tuning Large Language Models for Automatic Font Skeleton Generation: A First Attempt.</a>
+                    <ul>
+                        <li> Yuxuan Liu, Yasuhisa Fujii, Xinru Zhu, and Kayoko Nohara</li>
+                        <li> IEICE technical report, vol. 124, no. 23, PRMU2024-2, pp. 7-12.</li>
+                        <li> Oral presentation on PRMU2024 in Tokyo, Japan (less or non-refreed)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            &copy; 2025 Yuxuan Liu
+        </footer>
+    </div>
+
+<script>
+function toggleTheme() {
+    const body = document.body;
+    const icon = document.getElementById('theme-icon');
+
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+    } else {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    }
+}
+document.body.classList.add('light-mode');
+</script>   
+
+</body>
+</html>
+
