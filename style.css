@@ -91,6 +91,18 @@ body.light-mode .sidebar {
   filter: invert(50%);
 }
 
+.linkedin-link:hover .github-icon {
+  filter: invert(50%);
+}
+
+.cv-link:hover .github-icon {
+  filter: invert(50%);
+}
+
+.home-link:hover .github-icon {
+  filter: invert(50%);
+}
+
 body.dark-mode .sidebar a {
   color: #dddddd; /* or any light gray / white */
 }
